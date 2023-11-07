@@ -1,0 +1,127 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background: linear-gradient(150deg, #765791, #C87086);
+    height: 100vh;
+}
+
+table.responsive-table {
+    width: 100%;
+    /* Cambiamos el ancho al 100% para que se adapte a la pantalla */
+    margin: 0 auto;
+}
+
+table.responsive-table th,
+table.responsive-table {
+    background: white;
+    border-spacing: 10px;
+}
+
+table.responsive-table,
+table.responsive-table th,
+table.responsive-table td {
+    border-radius: 40px;
+    border: 2px solid #fff;
+}
+
+table.responsive-table th,
+table.responsive-table td {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.red-bg {
+    background-color: lightcoral;
+}
+
+.green-bg {
+    background-color: darkseagreen;
+}
+
+
+/* Agregamos una regla para ocultar el encabezado en pantallas pequeñas */
+
+thead {
+    display: none;
+}
+
+
+/* Mostramos los datos como bloques en lugar de filas en pantallas pequeñas */
+
+tbody {
+    display: block;
+}
+
+
+/* Alineamos los datos a la izquierda en pantallas pequeñas */
+
+td {
+    text-align: left;
+}
+
+
+/* Cambiamos el estilo de los botones en pantallas pequeñas */
+
+.Delete {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    color: black;
+    border: 2px solid #000;
+    border-radius: 80px;
+    cursor: pointer;
+    width: 70%;
+    height: 60px;
+}
+
+.Delete:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.arrow-left {
+    display: inline-block;
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+    transform: rotate(135deg);
+}
+
+.round-button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 10px 10px 1px rgba(0.50, 0.50, 0.50, 0.50);
+}
+
+.round-button:hover {
+    background-color: #6c3483;
+    transition: .4s;
+}
+
+h1 {
+    color: white;
+}
+
+@media (min-width: 600px) {
+    /* Restauramos el estilo del encabezado y la disposición de la tabla en pantallas más grandes */
+    thead {
+        display: table-header-group;
+    }
+    tbody {
+        display: table-row-group;
+    }
+    td {
+        text-align: center;
+    }
+}

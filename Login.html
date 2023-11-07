@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/Login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="images/account.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="assets/css/Login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <script src="assets/js/focus.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="formulario">
+        <h1>Login</h1>
+        <form action="assets/php/ValidacionUsuario.php" method="POST">
+            <div class="username">
+                <input type="text" placeholder="Usuario" required name="USER">
+
+            </div>
+            <div class="contraseña">
+                <input type="password" placeholder="Contraseña" name="PASSWORD" required>
+
+            </div>
+            <input type="submit" value="Ingresar" onclick="prueba()">
+            <div class="registrarse">
+                <a href="Register.html">¿Aun no tienes una cuenta?</a>
+            </div>
+        </form>
+
+    </div>
+    <a href="index.html" class="round-button">
+        <span class="arrow-left"></span>
+    </a>
+</body>
+
+</html>

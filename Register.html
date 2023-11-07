@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Registro</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/Register.css" />
+		<link rel="icon" href="images/register-form.ico" type="image/x-icon">
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="assets/js/Sweet.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		
+		<div class="formulario">
+			<h1>Registro</h1>
+			<form action="assets/php/Register.php" method="post">
+				<div class="username">
+					<input type="text" placeholder="Nombre de Usuario" name="Nombre" required>
+				</div>
+				<div class="correo">
+					<input type="email" placeholder="Correo" name="Correo" required >					
+				</div>
+				<div class="contraseña">
+					
+					<input type="password" class="pass" id="pass" placeholder="Contraseña" name="Contraseña"required>
+					
+				</div>
+				
+				<input type="submit" value="Registrarme">
+				<div class="registrarse">
+					<a href="Login.html">¿Ya Tienes una cuenta?</a>
+	
+				</div>
+			</form>
+			
+		</div>
+		<a href="index.html" class="round-button">
+			<span class="arrow-left"></span>
+		</a>
+
+	</body>
+</html>

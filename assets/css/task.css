@@ -1,0 +1,252 @@
+:root {
+    --primary: #A5C882;
+    --secondary: #D33F49;
+    --light: #fff;
+    --dark: #000;
+    --diabled: #e7e7e7;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--diabled);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    padding: 25px;
+    background-color: var(--light);
+    width: 60%;
+    max-width: 1000px;
+    /* Aumenta el máximo para el contenido interno */
+}
+
+
+/* ... (Mantén los otros estilos) */
+
+*:first-letter {
+    text-transform: capitalize;
+}
+
+.roundBorder {
+    border-radius: 5px;
+}
+
+.roundBorder1 {
+    width: 100px;
+    height: 50px;
+    border: none;
+    margin-left: 70px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--secondary);
+    color: var(--light);
+    text-align: center;
+    font-family: 'Lato', 'sans-serif';
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateRight {
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber {
+    font-size: 50px;
+}
+
+#dateText {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dateMonth,
+#dateNumber,
+#dateText {
+    font-weight: bold;
+}
+
+#dateMonth,
+#dateYear {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton,
+.orderButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.addTaskButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--diabled);
+}
+
+.orderButton {
+    background-color: var(--secondary);
+    color: var(--light);
+    text-align: center;
+    text-decoration: none;
+}
+
+.task {
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.done {
+    background-color: var(--diabled);
+    text-decoration: line-through;
+    color: var(--dark);
+}
+
+a .Mostrar {
+    text-decoration: none;
+    font-family: 'Lato', 'sans-serif';
+}
+
+.Desc {
+    width: 350px;
+    height: 50px;
+    overflow-y: scroll;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+    font-family: 'Lato', 'sans-serif';
+    font-size: 16px;
+}
+
+.Desc::placeholder {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lato', 'sans-serif';
+}
+
+.taskDesc {
+    border-radius: 5px;
+    height: 70px;
+    margin-top: 10px;
+    /* Ajusta el margen superior para alinear con el formulario */
+}
+
+.addTaskButton1 {
+    display: flex;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    margin-top: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--diabled);
+}
+
+.addTaskButton:hover {
+    transition: .5s;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px #888888;
+}
+
+.addTaskButton1:hover {
+    transition: .5s;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px #888888;
+}
+
+.out {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.out:hover {
+    transform: scale(1.20);
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input {
+    border: none;
+    padding-left: 20px;
+    background-color: var(--diabled);
+    display: block;
+    /* Cambia a bloque para que estén uno debajo del otro */
+    margin-bottom: 10px;
+    margin-left: 100px;
+    width: 500px;
+    height: 50px;
+    /* Añade un margen inferior para separar los elementos */
+}
+
+.roundBorder1:hover {
+    transition: .5s;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px #888888;
+}
+
+@media (max-width: 600px) {
+    .list {
+        width: 90%;
+        /* Reduce el ancho del formulario */
+    }
+    .roundBorder1 {
+        width: 100%;
+        /* Ajusta el ancho del botón al 100% del contenedor */
+        margin-left: 0;
+        /* Elimina el margen izquierdo */
+    }
+    .addTaskButton,
+    .addTaskButton1 {
+        width: 35px;
+        margin-left: 12px;
+        height: 40px;
+        /* Ajusta el ancho de los botones al 100% del contenedor */
+    }
+    input {
+        width: 100%;
+        /* Ajusta el ancho de los campos de entrada al 100% del contenedor */
+        margin-left: 0;
+        /* Elimina el margen izquierdo */
+    }
+    .out {
+        margin-left: 4px;
+    }
+    .roundBorder1 {
+        margin-left: 15px;
+    }
+}

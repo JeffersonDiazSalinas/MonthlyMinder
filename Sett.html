@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Administracion</title>
+    <link rel="icon" href="images/MonthlyMinder.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/Sett.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="assets/js/Swal.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body class="BODY">
+    <script>
+        window.onload = function() {
+            swal({
+                title: "¡RECUERDA!",
+                text: "¡Todas Las Tareas Agregadas Se Eliminaran Despues De 30 Dias!",
+                icon: "warning",
+                button: "Entendido"
+            })
+        }
+    </script>
+    <div class="title-cards">
+        <h2>Bienvenido a MonthlyMinder</h2>
+        <h3><br>
+            <box-icon class="Tools" name='chevrons-down' type='solid' style="position: relative; 
+			top: 5px;
+			right:7px;"></box-icon>Herramientas
+            <box-icon class="Tools" name='chevrons-down' type='solid' style="position: relative; 
+			        top: 5px;
+			left:7px;"></box-icon>
+        </h3>
+    </div>
+    <div class="container-card">
+
+        <div class="card">
+            <figure>
+                <img src="https://img.freepik.com/vector-gratis/programacion-planificacion-establecimiento-metas-programacion-sincronizacion-optimizacion-flujo-trabajo-tomando-nota-asignacion-empresaria-personaje-dibujos-animados-horario_335657-1181.jpg?w=740&t=st=1698788861~exp=1698789461~hmac=e9229280b7e2c1d427af984f9667521dc2409177713e82d4252d8c9237bec8dc">
+            </figure>
+            <div class="contenido-card">
+                <h3>Nueva Tarea</h3>
+                <p>Permite a los usuarios ingresar un título conciso para la tarea que desean crear, brindando una descripción breve de la actividad a realizar, y organizandolas por tipo de categoria y fecha de creacion.</p>
+                <br><a href="TaskIndex.html">¡Vamos!</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="https://img.freepik.com/vector-gratis/mujer-ilustrada-que-reserva-cita-calendario_23-2148563060.jpg?w=740&t=st=1698789744~exp=1698790344~hmac=c1624c9296d406a59c5a10d1b537cb074ec0dfb3c51b0c3ec1475b1c6654059f">
+            </figure>
+            <div class="contenido-card">
+                <h3>Mostrar y Eliminar</h3>
+                <p>Mantente al dia de tus objetivos y no los olvides. Recuerda que cada pequeño paso te acerca un poco más a tus metas. Si conseguiste tu objetivo !Enhorabuena¡, puedes eliminar ahora tu tarea</p>
+                <br><a href="MostrarTareas.php">¡Veamoslas!</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="https://img.freepik.com/vector-gratis/sacar-productos-cesta-negarse-comprar-cambiar-decision-eliminacion-elementos-vaciado-papelera-aplicacion-compras-linea-personaje-dibujos-animados-usuario-computadora-portatil_335657-1172.jpg?size=626&ext=jpg">
+            </figure>
+            <div class="contenido-card">
+                <h3>Actualiza tus Tareas</h3>
+                <p>Administra tus tareas, Actualiza su contenido en caso de que lo requieras, sin ningun tipo de limitacion para que puedas avanzar en tu proceso y estar cada vez mas cerca, ¡Tu Puedes!</p>
+                <br><a href="ModificarTarea.html">¡Vamos!</a>
+            </div>
+        </div>
+    </div>
+    <a href="index.html" class="round-button">
+        <span class="arrow-left"></span>
+    </a>
+</body>
+
+</html>

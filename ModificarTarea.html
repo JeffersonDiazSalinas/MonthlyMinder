@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/ModificarTarea.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Buscar Tarea</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>¿Qué tarea deseas modificar?</h2>
+        <form action="assets/php/ModificarTarea.php" method="POST">
+            <div class="form-group">
+                <label for="buscar_tarea">Nombre de la Tarea:</label>
+                <input type="text" id="buscar_tarea" name="buscar_tarea" required>
+            </div>
+
+            <input type="submit" class="Buscar" value="Buscar"></input>
+        </form>
+    </div>
+</body>
+
+</html>
